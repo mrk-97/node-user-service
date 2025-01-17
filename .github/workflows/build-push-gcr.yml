@@ -44,4 +44,4 @@ jobs:
       run: |
         gcloud compute instance-groups managed rolling-action start-update node-user-service \
           --version template=node-user-service-${{ env.IMAGE_TAG }} \
-          --zone=us-central1-a  # specify your zone here
+          --zone=us-central1-a
